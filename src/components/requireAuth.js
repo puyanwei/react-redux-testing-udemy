@@ -22,9 +22,9 @@ export default ChildComponent => {
         }
     }
 
-    function mapStateToProps(state) {
+    const mapStateToProps = state => {
         return { auth: state.auth };
-    }
+    };
 
     return connect(mapStateToProps)(ComposedComponent);
 };
